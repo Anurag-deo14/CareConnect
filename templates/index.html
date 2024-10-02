@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Emotional Support Assistant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        textarea, select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            height: 50px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .response, .error {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .response h2 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Emotional Support Assistant</h1>
+    <form method="POST" action="/">
+        <label for="emotion">How are you feeling right now?</label>
+        <select name="emotion" id="emotion" required>
+            <option value="" disabled selected>Select your current emotion</option>
+            <option value="Sad">Sad</option>
+            <option value="Stressed">Stressed</option>
+            <option value="Anxious">Anxious</option>
+            <option value="Lonely">Lonely</option>
+            <option value="Overwhelmed">Overwhelmed</option>
+            <option value="Frustrated">Frustrated</option>
+        </select>
+
+        <label for="prompt">Tell me more about what you're going through:</label>
+        <textarea name="prompt" id="prompt" placeholder="You can share anything you're feeling..." required></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    {% if response %}
+    <div class="response">
+        <h2>Response from Gemini:</h2>
+        {{ response|safe }}
+    </div>
+    {% endif %}
+
+    {% if error %}
+    <div class="error">
+        {{ error }}
+    </div>
+    {% endif %}
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Emotional Support Assistant | Powered by Gemini AI</p>
+</div>
+
+</body>
+</html>
