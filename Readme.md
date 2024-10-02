@@ -6,9 +6,7 @@
 > A smart system designed to provide emotional support and mental health resources to students while assisting educational institutions in managing student well-being. This application leverages advanced AI technology to offer personalized guidance and empathetic responses, ensuring users feel understood and supported in their mental health journeys.
 
 ## Background
-<p align="center">
-  <img src="https://i.ibb.co/s6f1WqV/ai.png" />
-</p>
+
 
 
 In today’s fast-paced world, students and young adults face significant challenges in managing their mental health. Traditional methods of seeking help, such as visiting counselors or support services, can often be time-consuming, intimidating, and stigmatizing, creating barriers to accessing the support they need. Furthermore, many individuals struggle with understanding their emotions and the complexities of mental health, leading to feelings of isolation, confusion, and dissatisfaction.
@@ -38,9 +36,6 @@ Scalable Solutions: AI-powered chatbots can handle a large volume of inquiries, 
 By revolutionizing the way mental health support is delivered, we can create a more compassionate and responsive environment for those in need. Our AI-powered solution aims to bridge the gap between traditional mental health services and the modern needs of users, ensuring that emotional support is accessible and effective for everyone.
 
 
-<p align="center">
-  <img src="https://i.ibb.co/xSFhWy9/DALL-E-2024-10-02-14-46-29-An-image-representing-AI-and-machine-learning-transforming-the-insurance.png" />
-</p>
 
 There is a need for a technology platform to **Recover from the Mental/Emotional Health Problems** and that's how our project **CareConnect** jumps in!
 ## What is CareConnect?
@@ -52,9 +47,7 @@ CareConnect offers a comprehensive **AI-driven** solution for all users, includi
 
 Explore the future of mental health support with CareConnect and discover how we are simplifying the journey toward emotional wellness for everyone!
 
-<p align="center">
-  <img src="https://github.com/Ayanghosh-agno/AI_Insurance/blob/main/images/whole.gif" />
-</p>
+
 
 A further explanation of how each of these works can be found in the Engineering section below.
 
@@ -78,7 +71,7 @@ Delve deep to explore more!
 # Engineering
 
 ### System Architecture
-![sys-arch](https://i.ibb.co/9ZgtJKD/Blank-diagram-5.png)
+
 
 ## Technology Stack:
   1) Flask
@@ -93,9 +86,7 @@ Delve deep to explore more!
 
 **So, how everything works?**
 
-<p align="center">
-  <img src="https://i.ibb.co/HFgB4dY/Virtual-Assistant.png" />
-</p>
+
 
 > 1. **User Interaction:** Users can enter their concerns through a user-friendly web interface, facilitating seamless communication with the AI assistant.
 > 2. **Response Generation:** The user's input is sent to the Gemini API, which processes the information and generates a thoughtful, empathetic response.
