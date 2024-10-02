@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.ERROR)
 model = genai.GenerativeModel('gemini-pro')
 
 # Fetch the API key from the environment variable
-my_api_key_gemini = os.getenv('GEMINI_API_KEY')
+my_api_key_gemini = os.getenv('AIzaSyAzGhJRXVbICb_UcofGD021UN0IhRf4j5s')
 if not my_api_key_gemini:
     raise ValueError("API key is not set in the environment variables.")
 
