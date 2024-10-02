@@ -1,1 +1,1 @@
-web: sh start.sh
+web:gunicorn -c gunicorn_config.py app:app
